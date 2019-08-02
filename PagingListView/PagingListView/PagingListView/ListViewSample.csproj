@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Apple.jpg" />
+    <None Remove="Images\Apricot.jpg" />
+    <None Remove="Images\Banana.jpg" />
+    <None Remove="Images\Cherry.jpg" />
+    <None Remove="Images\CustardApple.jpg" />
+    <None Remove="Images\Dragon.jpg" />
+    <None Remove="Images\Grapes.jpg" />
+    <None Remove="Images\Guava.jpg" />
+    <None Remove="Images\Jackfruit.jpg" />
+    <None Remove="Images\Kiwi.jpg" />
+    <None Remove="Images\Lemon.jpg" />
+    <None Remove="Images\Lime.jpg" />
+    <None Remove="Images\Mango.jpg" />
+    <None Remove="Images\Orange.jpg" />
+    <None Remove="Images\Papaya.jpg" />
+    <None Remove="Images\Peaches.jpg" />
+    <None Remove="Images\Pear.jpg" />
+    <None Remove="Images\Pineapple.jpg" />
+    <None Remove="Images\Pomegranate.jpg" />
+    <None Remove="Images\Raspberry.jpg" />
+    <None Remove="Images\Strawberry.jpg" />
+    <None Remove="Images\Watermelon.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Apple.jpg" />
+    <EmbeddedResource Include="Images\Apricot.jpg" />
+    <EmbeddedResource Include="Images\Banana.jpg" />
+    <EmbeddedResource Include="Images\Cherry.jpg" />
+    <EmbeddedResource Include="Images\CustardApple.jpg" />
+    <EmbeddedResource Include="Images\Dragon.jpg" />
+    <EmbeddedResource Include="Images\Grapes.jpg" />
+    <EmbeddedResource Include="Images\Guava.jpg" />
+    <EmbeddedResource Include="Images\Jackfruit.jpg" />
+    <EmbeddedResource Include="Images\Kiwi.jpg" />
+    <EmbeddedResource Include="Images\Lemon.jpg" />
+    <EmbeddedResource Include="Images\Lime.jpg" />
+    <EmbeddedResource Include="Images\Mango.jpg" />
+    <EmbeddedResource Include="Images\Orange.jpg" />
+    <EmbeddedResource Include="Images\Papaya.jpg" />
+    <EmbeddedResource Include="Images\Peaches.jpg" />
+    <EmbeddedResource Include="Images\Pear.jpg" />
+    <EmbeddedResource Include="Images\Pineapple.jpg" />
+    <EmbeddedResource Include="Images\Pomegranate.jpg" />
+    <EmbeddedResource Include="Images\Raspberry.jpg" />
+    <EmbeddedResource Include="Images\Strawberry.jpg" />
+    <EmbeddedResource Include="Images\Watermelon.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="17.2.0.35" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="17.2.0.35" />
+    <PackageReference Include="Syncfusion.Xamarin.SfNumericTextBox" Version="17.2.0.35" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.581479" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>
