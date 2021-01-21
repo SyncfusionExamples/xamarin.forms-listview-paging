@@ -40,6 +40,7 @@ namespace Paging
 
         protected override void OnDetachingFrom(ContentPage bindable)
         {
+            dataPager.OnDemandLoading -= DataPager_OnDemandLoading;
             listView = null;
             PagingViewModel = null;
             dataPager = null;
