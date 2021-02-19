@@ -28,6 +28,7 @@ namespace ListViewSample.iOS
             global::Xamarin.Forms.Forms.Init();
             new SfNumericTextBoxRenderer();
             SfListViewRenderer.Init();
+            SfDataGridRenderer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
